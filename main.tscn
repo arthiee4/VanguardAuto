@@ -209,7 +209,7 @@ offset_top = 443.0
 offset_right = 558.0
 offset_bottom = 492.0
 theme_override_fonts/font = SubResource("FontFile_sc1k8")
-text = "Remember to close the program before opening League of Legends, 
+text = "Remember to close the program before opening the game, 
 to avoid any risks."
 horizontal_alignment = 1
 vertical_alignment = 1
