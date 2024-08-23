@@ -1,0 +1,215 @@
+[gd_scene load_steps=5 format=3 uid="uid://bq0lccb7iv0ae"]
+
+[ext_resource type="Texture2D" uid="uid://dupv1wcyrk30x" path="res://textures/vanguardicon.webp" id="1_eymia"]
+[ext_resource type="Script" path="res://src/main.gd" id="1_l7ejj"]
+[ext_resource type="VideoStream" path="res://textures/bg1.ogv" id="2_mfqme"]
+
+[sub_resource type="FontFile" id="FontFile_sc1k8"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/70/0/ascent = 0.0
+cache/0/70/0/descent = 0.0
+cache/0/70/0/underline_position = 0.0
+cache/0/70/0/underline_thickness = 0.0
+cache/0/70/0/scale = 1.0
+cache/0/120/0/ascent = 0.0
+cache/0/120/0/descent = 0.0
+cache/0/120/0/underline_position = 0.0
+cache/0/120/0/underline_thickness = 0.0
+cache/0/120/0/scale = 1.0
+cache/0/170/0/ascent = 0.0
+cache/0/170/0/descent = 0.0
+cache/0/170/0/underline_position = 0.0
+cache/0/170/0/underline_thickness = 0.0
+cache/0/170/0/scale = 1.0
+cache/0/230/0/ascent = 0.0
+cache/0/230/0/descent = 0.0
+cache/0/230/0/underline_position = 0.0
+cache/0/230/0/underline_thickness = 0.0
+cache/0/230/0/scale = 1.0
+cache/0/310/0/ascent = 0.0
+cache/0/310/0/descent = 0.0
+cache/0/310/0/underline_position = 0.0
+cache/0/310/0/underline_thickness = 0.0
+cache/0/310/0/scale = 1.0
+cache/0/385/0/ascent = 0.0
+cache/0/385/0/descent = 0.0
+cache/0/385/0/underline_position = 0.0
+cache/0/385/0/underline_thickness = 0.0
+cache/0/385/0/scale = 1.0
+cache/0/405/0/ascent = 0.0
+cache/0/405/0/descent = 0.0
+cache/0/405/0/underline_position = 0.0
+cache/0/405/0/underline_thickness = 0.0
+cache/0/405/0/scale = 1.0
+cache/0/400/0/ascent = 0.0
+cache/0/400/0/descent = 0.0
+cache/0/400/0/underline_position = 0.0
+cache/0/400/0/underline_thickness = 0.0
+cache/0/400/0/scale = 1.0
+cache/0/390/0/ascent = 0.0
+cache/0/390/0/descent = 0.0
+cache/0/390/0/underline_position = 0.0
+cache/0/390/0/underline_thickness = 0.0
+cache/0/390/0/scale = 1.0
+cache/0/370/0/ascent = 0.0
+cache/0/370/0/descent = 0.0
+cache/0/370/0/underline_position = 0.0
+cache/0/370/0/underline_thickness = 0.0
+cache/0/370/0/scale = 1.0
+cache/0/210/0/ascent = 0.0
+cache/0/210/0/descent = 0.0
+cache/0/210/0/underline_position = 0.0
+cache/0/210/0/underline_thickness = 0.0
+cache/0/210/0/scale = 1.0
+cache/0/135/0/ascent = 0.0
+cache/0/135/0/descent = 0.0
+cache/0/135/0/underline_position = 0.0
+cache/0/135/0/underline_thickness = 0.0
+cache/0/135/0/scale = 1.0
+cache/0/55/0/ascent = 0.0
+cache/0/55/0/descent = 0.0
+cache/0/55/0/underline_position = 0.0
+cache/0/55/0/underline_thickness = 0.0
+cache/0/55/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l7ejj")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+modulate = Color(0.57024, 0.676984, 0.907927, 1)
+self_modulate = Color(0.162066, 0.162066, 0.162066, 1)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1088.0
+stream = ExtResource("2_mfqme")
+autoplay = true
+expand = true
+loop = true
+
+[node name="Vanguardicon" type="Sprite2D" parent="."]
+position = Vector2(309, 138)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("1_eymia")
+
+[node name="TITLE" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 254.0
+offset_top = 49.0
+offset_right = 366.0
+offset_bottom = 72.0
+text = "VanguardAuto"
+
+[node name="action_buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="stopbutton" type="Button" parent="action_buttons"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 285.0
+offset_right = 311.0
+offset_bottom = 316.0
+scale = Vector2(2, 2)
+text = "STOP VANGUARD"
+
+[node name="startbutton" type="Button" parent="action_buttons"]
+layout_mode = 0
+offset_left = 162.0
+offset_top = 216.0
+offset_right = 304.0
+offset_bottom = 247.0
+scale = Vector2(2, 2)
+text = "START VANGUARD"
+
+[node name="window_buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="closebutton" type="Button" parent="window_buttons"]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 4.0
+offset_right = 596.0
+offset_bottom = 35.0
+pivot_offset = Vector2(60, 35)
+text = "x"
+
+[node name="minimizebutton" type="Button" parent="window_buttons"]
+layout_mode = 0
+offset_left = 522.0
+offset_top = 4.0
+offset_right = 558.0
+offset_bottom = 35.0
+pivot_offset = Vector2(60, 35)
+text = "-"
+
+[node name="statuslabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 239.0
+offset_top = 361.0
+offset_right = 306.0
+offset_bottom = 384.0
+text = "STATUS: "
+
+[node name="versionlabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 96.0
+offset_bottom = 25.0
+text = " version: 0.1"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 443.0
+offset_right = 558.0
+offset_bottom = 492.0
+theme_override_fonts/font = SubResource("FontFile_sc1k8")
+text = "Remember to close the program before opening League of Legends, 
+to avoid any risks."
+horizontal_alignment = 1
+vertical_alignment = 1
