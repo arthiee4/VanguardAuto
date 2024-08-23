@@ -7,3 +7,5 @@ Hey there! I was getting really fed up with the idea of being constantly monitor
 ---------------------------------------------------------------------
 Agora um tutorial rápido, aqui, selecione o local do seu vanguard, que geralmente está no local padrão 'Program Files/Riot Vanguard'.
 (fiz isso para evitar erros futuros caso o vanguard esteja em outro disco).
+
+![](git_images/image01.png)
