@@ -8,6 +8,24 @@ extends Control
 
 @onready var errorlabel_Text := $errorlabel
 
+var dragging = false
+var drag_offset = Vector2()
+
+func _gui_input(event):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed:
+			print("test")
+			dragging = true
+			drag_offset = event.position
+		else:
+			dragging = false
+
+	if event is InputEventMouseMotion and dragging:
+		# Converte manualmente Vector2i para Vector2
+		var window_position = Vector2(DisplayServer.window_get_position().x, DisplayServer.window_get_position().y)
+		var new_position = window_position + event.position - drag_offset
+		DisplayServer.window_set_position(new_position)
+
 func _ready():
 	
 	var config_file = "res://config.txt"
@@ -19,7 +37,7 @@ func _ready():
 	closewindow_button.pressed.connect(Callable(self, "_on_closewindow_button_pressed"))
 	minimizewindow_button.pressed.connect(Callable(self, "_on_minimizedwindow_button_pressed"))
 	
-	filedialog.set_size(Vector2(600, 450))
+	filedialog.set_size(Vector2(600, 460))
 	filedialog.current_dir = "C:/"
 	
 	browser_button.pressed.connect(Callable(self, "_on_browser_button_pressed"))

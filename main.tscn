@@ -121,6 +121,7 @@ self_modulate = Color(0.162066, 0.162066, 0.162066, 1)
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1088.0
+mouse_filter = 2
 stream = ExtResource("2_mfqme")
 autoplay = true
 expand = true
@@ -213,3 +214,5 @@ text = "Remember to close the program before opening the game,
 to avoid any risks."
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]

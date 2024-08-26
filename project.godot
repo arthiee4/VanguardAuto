@@ -30,7 +30,6 @@ window/size/viewport_width=600
 window/size/viewport_height=500
 window/size/resizable=false
 window/size/borderless=true
-window/vsync/vsync_mode=0
 
 [internationalization]
 

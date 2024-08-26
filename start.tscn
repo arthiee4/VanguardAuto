@@ -25,6 +25,7 @@ self_modulate = Color(0.439216, 0.215686, 0.219608, 0.784314)
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1088.0
+mouse_filter = 2
 stream = ExtResource("2_qiviv")
 autoplay = true
 expand = true
